@@ -15,6 +15,7 @@
 /* -----------------------navbar---------------------- */
 .navbar {
     height: 60px;
+    width: 100%;
     background-color: #0f1111;
     display: flex;
     align-items: center;
@@ -240,21 +241,19 @@
 
 
 /* ------------------cover-screen---------------------- */
-/* .cover-image {
-    height: 600px;
-    width: 100%;
-} */
-.cover-image {
+
+.cover-screen {
     position: relative;
     /* Needed for the floating div positioning */
-    background-image: url("https://m.media-amazon.com/images/I/61CiqVTRBEL._SX3000_.jpg");
+    background-image: url("https://m.media-amazon.com/images/I/61Lz+shgb8L._SX3000_.jpg");
     background-size: cover;
     /* Ensures the image covers the entire container */
     background-position: center;
+
     /* Centers the image */
     width: 100%;
     /* Ensures the container takes up the entire width of the page */
-    height: 100vh;
+    height: 50rch;
     /* Ensures the container takes up the entire viewport height */
 }
 
@@ -264,12 +263,12 @@
     justify-content: space-evenly;
     flex-direction: row;
     flex-wrap: wrap;
-    background-color: #cecece;
+    background-color: #efefef;
 }
 
 .common {
-    height: 380px;
-    width: 350px;
+    height: 20rem;
+    width: 20rem;
     margin: 5px;
     display: flex;
     flex-direction: column;
