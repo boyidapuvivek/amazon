@@ -322,3 +322,13 @@
     align-items: center;
     justify-content: center;
 }
+
+.bottom-footer-middle {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    height: 20px;
+    width: 100vw;
+    background-color: #232f3e;
+    color: #ffffff;
+}
