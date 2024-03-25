@@ -76,7 +76,7 @@
 /* ------------------searchbox-------------------- */
 .searchbox {
     display: flex;
-    width: 600px;
+    width: 35rem;
     justify-content: center;
     align-content: space-evenly;
 }
@@ -239,13 +239,10 @@
     width: 20px;
 }
 
-
-/* ------------------cover-screen---------------------- */
-
 .cover-screen {
     position: relative;
     /* Needed for the floating div positioning */
-    background-image: url("https://m.media-amazon.com/images/I/61Lz+shgb8L._SX3000_.jpg");
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, #ffffff 100%), url("https://m.media-amazon.com/images/I/61Lz+shgb8L._SX3000_.jpg");
     background-size: cover;
     /* Ensures the image covers the entire container */
     background-position: center;
@@ -253,25 +250,52 @@
     /* Centers the image */
     width: 100%;
     /* Ensures the container takes up the entire width of the page */
-    height: 50rch;
+    height: 100vh;
     /* Ensures the container takes up the entire viewport height */
+    overflow: hidden;
+    /* Ensure content inside doesn't overflow */
+    padding-bottom: 150px;
+    /* Adjust the height of the ad-boxes area */
 }
 
 /* ---------------------ad-boxs------------------------- */
+.ad-boxs {
+    width: 100%;
+    height: 30%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+
+/* ------------------cover-screen---------------------- */
+
+/* .cover-screen {
+    position: relative;
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 150%), url("https://m.media-amazon.com/images/I/61Lz+shgb8L._SX3000_.jpg");
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100vh;
+
+}
 .ad-boxs {
     display: flex;
     justify-content: space-evenly;
     flex-direction: row;
     flex-wrap: wrap;
     background-color: #efefef;
-}
+} */
 
 .common {
     height: 20rem;
     width: 20rem;
     margin: 5px;
     display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: center;
     position: relative;
@@ -307,11 +331,19 @@
 } */
 
 /* -----------------bottom-top-footer----------------- */
+.bottom {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    top: 90rem;
+}
+
 .bottom-footer-top {
     display: flex;
     flex-direction: column;
     text-align: center;
     align-items: center;
+
 }
 
 .footer-sign-in {
